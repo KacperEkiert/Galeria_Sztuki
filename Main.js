@@ -1,9 +1,20 @@
-let search_anim
+let i = 0;
+let zdjecia = [];
+let time = 3000;
 
-document.getElementById("search_input").addEventListener("transitionend", anim);
+zdjecia[0] = 'Abstract.jpg'
+zdjecia[1] = 'Museum.jpg'
+zdjecia[2] = 'StreetArt.jpg';
 
+function zmianaZdj(){
+    document.slide.src = zdjecia[i];
 
-function anim() {
-    search_anim = document.getElementById("search_input").style.display = "inline-flex"
-
+    if(i < zdjecia.length - 1){
+        i++;
+    } 
+    else{
+        i = 0
+    }
+    setTimeout("zmianaZdj()", time)
 }
+window.onload = zmianaZdj

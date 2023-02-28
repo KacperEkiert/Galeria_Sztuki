@@ -5,20 +5,24 @@
     text-decoration: none;
 }
 body{
-    background-color: #FDE3FC;
+    background-color: #ffffff;
 }
 nav{
     display: flex;
     height:8rem;
-    background-color: #FDE3FC;
+    background-color: #ffffff;
     font-family: 'Monoton';
     font-size: 25px;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid black;
+    margin-top: 8vh;
 }
 .top{
-    background-color: #FDE3FC;
+    position: fixed;
+    top:0;
+    z-index: 100;
+    background-color: #ffffff;
     border-bottom: 1px solid black;
     height:8vh;
     width:100%;
@@ -26,6 +30,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
+    
 }
 .menu{
     display: flex;
@@ -90,7 +95,7 @@ ul .menu_list{
     background: lightgray;
     box-sizing: border-box;
     border-radius: 25px;
-    border: 4px solid white;
+    border: 4px solid lightgray;
     padding: 5px;
 }
 
@@ -160,6 +165,7 @@ ul .menu_list{
     display: inline-flex;
     align-items: center;
     transition: all 0.5s;
+    padding: 0px 10px 0px 10px;
 }
 #log_in_icon_a:hover{
     filter:opacity(70%);
@@ -208,6 +214,19 @@ ul .menu_list{
   .logo_hover:hover{
       animation:rainbow 0.75s ease forwards ;
   }
+  .Slide{
+    width: 100%;
+    max-height: 73vh;
+    filter: grayscale(100%);
+  }
+  
+
+
+
+
+
+
+
   @keyframes rainbow-reverse {
       0% {
           background-size: 650%;
