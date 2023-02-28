@@ -20,9 +20,10 @@ nav{
 .top{
     background-color: #FDE3FC;
     border-bottom: 1px solid black;
-    height:5%;
+    height:8vh;
     width:100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
 }
@@ -34,10 +35,12 @@ nav{
 .menu_list{
     display: inline-flex;
     list-style-type: none;
-    height: 100%;
     width:100%;
     align-items: center;
     justify-content: space-around;
+}
+ul .menu_list{
+    height:100%;
 }
 .menu_link{
     padding:5px 0px 5px 0px;
@@ -49,10 +52,21 @@ nav{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 1px;
-    bottom: 5px;
+    height: 2px;
+    bottom: 0px;
     left: 0;
-    background-color: black;
+    background: linear-gradient(
+        45deg,
+        #CA4246 16.666%, 
+        #E16541 16.666%, 
+        #E16541 33.333%, 
+        #F18F43 33.333%, 
+        #F18F43 50%, 
+        #8B9862 50%, 
+        #8B9862 66.666%, 
+        #476098 66.666%, 
+        #476098 83.333%, 
+        #A7489B 83.333%);;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
 }
@@ -130,15 +144,27 @@ nav{
 .log_in_icon{
     height:50px;
     padding:0px;
+    
 }
+
 .shopping_cart_icon{
     height:50px;
     padding:0px;
+    transition: all 0.5s;
 }
+.shopping_cart_icon:hover{
+    filter:opacity(70%);
+}
+
 #log_in_icon_a{
     display: inline-flex;
     align-items: center;
+    transition: all 0.5s;
 }
+#log_in_icon_a:hover{
+    filter:opacity(70%);
+}
+
 
 
 
