@@ -24,12 +24,11 @@
 <body>
     <div class="top">
         <div class="menu">
-            <ul class="menu_list">
-                <li><a href="#" class="menu_link">Painting</a></li>
-                <li><a href="#" class="menu_link">Sculpture</a></li>
-                <li><a href="#" class="menu_link">Photography</a></li>
-                <li><a href="#" class="menu_link">Artists</a></li>
-            </ul>
+            <div class="menu_list">
+                <a data-link="painting" class="menu_link">Obrazy</a>
+                <a data-link="sculpture" class="menu_link">Rzeźby</a>
+                <a data-link="photography" class="menu_link">Fotografie</a>
+            </div>
         </div>
         <div class="right_icons">
             <div class="search_bar">
@@ -54,7 +53,7 @@
         </div>
 
         <div class="categories">
-            <div class="painting">
+            <div class="painting" id="painting">
                 <h2 class="tytul">Obrazy</h2>
                         <div class="monalisa">
                             <img class="monalisa" name="monalisa" alt="Mona Lisa - Leonardo da Vinci" src="/Obrazy/Obrazy/MonaLisa.jpg">
@@ -67,7 +66,7 @@
                         </div>
             </div>
 
-            <div class="sculpture">
+            <div class="sculpture" id="sculpture">
                 <h2 class="tytul">Rzeźby</h2>
                     <div class="dawid">
                         <img class="dawid" name="dawid" alt="Dawid - Michał Anioł" src="/Obrazy/Rzeźby/Dawid.jpg">
@@ -80,7 +79,7 @@
                     </div>
             </div>
 
-            <div class="photography">
+            <div class="photography" id="photography">
                 <h2 class="tytul">Fotografie</h2>
                 <div class="lunch">
                     <img name="lunch" src="/Obrazy/Fotografie/Lunchnadrapaczuchmur.jpg">

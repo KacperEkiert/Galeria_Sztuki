@@ -18,3 +18,11 @@ function zmianaZdj(){
     setTimeout("zmianaZdj()", time)
 }
 zmianaZdj();
+
+const linki = document.querySelectorAll(".menu_link");
+linki.forEach((item)=>{
+    item.addEventListener("click", ()=>{
+        const element = document.getElementById(item.getAttribute("data-link"));
+        element.scrollIntoView({behavior:"smooth", block:"start"})
+    })
+})
