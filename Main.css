@@ -202,8 +202,145 @@ ul .menu_list{
     flex-direction: column;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 5%;
+    
   }
-  
+  .tytul{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    
+}
+  .monalisa{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin:1%;
+    position: relative;
+  }
+  .monalisa::after{
+    content: "Leonardo Da Vinci namalował ten jeden z najbardziej rozpoznawalnych obrazów świata pomiędzy 1503 a 1517 rokiem. Na przestrzeni lat badaczy nękało pytanie kim jest ta tajemnicza kobieta ze swoim słynnym uśmiechem. Teorie są różne: że jest to żona florenckiego kupca Francesco di Bartolomeo del Giocondo (stąd alternatywny tytuł dzieła, La Gioconda); że na portrecie jest matka Leonarda – Cateriną; a nawet że jest to sam Leonardo w wersji drag queen. Obraz można obejrzeć w Luwrze w Paryżu.";
+    position: absolute;
+    font-family: 'Montserrat',sans-serif;
+    color:lightgray;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    border-radius:10px ;
+    max-width: 40vw;
+    padding:0 5vw 0 5vw;
+    height:300px;
+    background-color: rgba(211, 211, 211, 0.459);
+    transform:scaleX(0);
+    transform-origin: right;
+    transition: all 0.3s;
+  }
+  .monalisa:hover::after{
+    visibility: visible;
+    transform:scaleX(1);
+  }
+  .wieczerza{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin:1%;
+    position: relative;
+  }
+  .wieczerza::after{
+    content:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis vel impedit voluptatum maxime quia ipsum fugiat incidunt accusantium, laboriosam optio ratione repellat debitis officiis quae, adipisci velit in, eaque sed!";
+    position: absolute;
+    font-family: 'Montserrat',sans-serif;
+    color:lightgray;
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    border-radius:10px ;
+    max-width: 40vw;
+    padding:0 5vw 0 5vw;
+    height:100px;
+    background-color: rgba(211, 211, 211, 0.459);
+    transform:scaleX(0);
+    transform-origin: right;
+    transition: all 0.3s;
+  }
+  .wieczerza:hover::after{
+    visibility: visible;
+    transform:scaleX(1);
+  }
+  .perla{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin:1%;
+  }
+  .painting img {
+    width:50vw;
+    max-height: 100vh;
+    border-radius: 10px;
+  }
+  .painting{
+    margin:1%;
+    padding:1%;
+    background-color: lightgray;
+  }
+  .dawid{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin:1%;
+  }
+  .nike{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin:1%;
+  }
+  .pieta{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin:1%;
+  }
+  .sculpture img{
+    width:50vw;
+    max-height: 100vh;
+    border-radius: 10px;
+  }
+  .sculpture{
+    margin:1%;
+    padding:1%;
+    background-color: lightgray;
+  }
+  .lunch{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin:1%;
+  }
+  .tank{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    margin:1%;
+  }
+  .photography img{
+    width:50vw;
+    max-height: 100vh;
+    border-radius: 10px;
+  }
+  .photography{
+    margin:1%;
+    padding:1%;
+    background-color: lightgray;
+  }
 
 
 
