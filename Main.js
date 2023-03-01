@@ -1,6 +1,6 @@
 let i = 0;
 let zdjecia = [];
-let time = 3000;
+let time = 5000;
 
 zdjecia[0] = 'Abstract.jpg'
 zdjecia[1] = 'Museum.jpg'
@@ -17,4 +17,4 @@ function zmianaZdj(){
     }
     setTimeout("zmianaZdj()", time)
 }
-window.onload = zmianaZdj
+zmianaZdj();
